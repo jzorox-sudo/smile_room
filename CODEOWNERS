@@ -1,0 +1,7 @@
+# CODEOWNERS — Smile Room Landing Page
+# Docs: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+#
+# Format: <pattern>  <@owner>
+# Replace @tu-usuario with your real GitHub username.
+
+*   @tu-usuario

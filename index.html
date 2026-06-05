@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>SMILE ROOM | Dr. Juan Atondo - Dentista en Los Mochis, Sinaloa</title>
+    <meta
+        content="SMILE ROOM del Dr. Juan Atondo. Especialistas en diseño de sonrisa, implantes dentales y ortodoncia en Los Mochis, Sinaloa. Agenda tu cita hoy."
+        name="description" />
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=EB+Garamond:wght@400;500;700&amp;family=Inter:wght@400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-fixed": "#0b1d2d",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#1a2b3c",
+                        "outline": "#74777d",
+                        "tertiary-fixed-dim": "#e3c285",
+                        "surface-variant": "#dfe3e4",
+                        "tertiary-container": "#382700",
+                        "surface-container": "#eaeff0",
+                        "on-primary-fixed-variant": "#38485a",
+                        "primary-fixed": "#d2e4fb",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#594312",
+                        "inverse-on-surface": "#edf1f2",
+                        "on-surface-variant": "#44474c",
+                        "on-surface": "#181c1d",
+                        "tertiary-fixed": "#ffdea3",
+                        "on-secondary": "#ffffff",
+                        "on-secondary-fixed": "#001f28",
+                        "primary": "#041627",
+                        "on-background": "#181c1d",
+                        "border-subtle": "rgba(14, 165, 201, 0.15)",
+                        "secondary-fixed": "#b6eaff",
+                        "surface-tint": "#4f6073",
+                        "primary-fixed-dim": "#b7c8de",
+                        "on-secondary-container": "#005c72",
+                        "outline-variant": "#c4c6cd",
+                        "inverse-primary": "#b7c8de",
+                        "surface-bright": "#f6fafb",
+                        "secondary-container": "#60d7fd",
+                        "on-secondary-fixed-variant": "#004e60",
+                        "accent-hover": "#0891b2",
+                        "surface": "#f6fafb",
+                        "secondary-fixed-dim": "#5dd5fa",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#aa8d55",
+                        "surface-container-low": "#f0f4f5",
+                        "text-muted": "#6b7f8e",
+                        "on-tertiary-fixed": "#261900",
+                        "surface-container-high": "#e5e9ea",
+                        "secondary": "#00677f",
+                        "tertiary": "#1f1400",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "background": "#f6fafb",
+                        "surface-ice": "#eef6f8",
+                        "on-primary-container": "#8192a7",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#d6dbdc",
+                        "success-clinical": "#10b981",
+                        "surface-container-highest": "#dfe3e4",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#2c3132"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "unit": "8px",
+                        "margin-mobile": "20px",
+                        "container-max": "1200px",
+                        "section-gap-sm": "64px",
+                        "section-gap-lg": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["EB Garamond"],
+                        "display-lg": ["EB Garamond"],
+                        "button-text": ["DM Sans"],
+                        "headline-sm": ["EB Garamond"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["DM Sans"],
+                        "body-lg": ["Inter"],
+                        "display-lg-mobile": ["EB Garamond"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "400" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "500" }],
+                        "button-text": ["14px", { "lineHeight": "1", "fontWeight": "600" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "500" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "SMILE ROOM - Dr. Juan Atondo",
+      "image": "image-doctor-profile",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Independencia",
+        "addressLocality": "Los Mochis",
+        "addressRegion": "Sinaloa",
+        "postalCode": "81200",
+        "addressCountry": "MX"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 25.7937,
+        "longitude": -108.9958
+      },
+      "url": "https://smileroom.mx",
+      "telephone": "+526681873390",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body class="bg-surface font-body-md text-on-surface selection:bg-secondary-container">
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-primary/80 backdrop-blur-md h-20">
+        <div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-full">
+            <a class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary-fixed tracking-tight"
+                href="#">SMILE ROOM</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a class="text-label-caps font-label-caps text-primary dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300"
+                    href="#tratamientos">Tratamientos</a>
+                <a class="text-label-caps font-label-caps text-primary dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300"
+                    href="#doctor">Doctor</a>
+                <a class="text-label-caps font-label-caps text-primary dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300"
+                    href="#resultados">Resultados</a>
+                <a class="text-label-caps font-label-caps text-primary dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300"
+                    href="#faq">FAQ</a>
+                <a class="text-label-caps font-label-caps text-primary dark:text-on-primary-container hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-300"
+                    href="#contacto">Contacto</a>
+                <button
+                    class="bg-primary text-on-primary px-6 py-3 font-button-text text-button-text rounded hover:bg-secondary transition-all active:opacity-80"
+                    onclick="openModal()">Agendar Cita</button>
+            </div>
+            <button class="md:hidden text-primary">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center pt-20 overflow-hidden bg-surface-ice">
+        <div class="max-w-container-max mx-auto px-gutter w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <p class="text-secondary font-label-caps text-label-caps mb-4 h-6 uppercase tracking-widest"
+                    id="typewriter"></p>
+                <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                    Tu Clínica Dental de Confianza en <span class="text-secondary">Los Mochis</span>
+                </h1>
+                <p class="text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                    Combinamos tecnología avanzada con un enfoque humano y detallado para crear la sonrisa que siempre
+                    has deseado.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="bg-primary text-on-primary px-8 py-4 font-button-text text-button-text rounded-lg hover:bg-secondary transition-all text-center"
+                        onclick="openModal()">Agendar Cita</button>
+                    <a class="border-2 border-primary text-primary px-8 py-4 font-button-text text-button-text rounded-lg hover:bg-primary hover:text-on-primary transition-all text-center"
+                        href="#tratamientos">Ver Servicios</a>
+                </div>
+            </div>
+            <div class="relative reveal h-[500px] md:h-[600px] rounded-2xl overflow-hidden shadow-xl">
+                <img alt="Smile Room Los Mochis" class="w-full h-full object-cover"
+                    data-alt="A professional and bright dental clinic interior with modern medical equipment and a comfortable atmosphere. The scene features soft daylight streaming through large windows, highlighting the clean and sterile environment of a boutique dental practice in Los Mochis, Sinaloa. The color palette is composed of serene blues, whites, and subtle navy accents."
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDLCicV8-1Rcl82yanh_tyDXvKoQp_HxGSaY7Bgb8jFi7u19qYP1PLlZvgrmL5452CwqWMuluYarSg3cx3e91eem70WAsSaupue0gILshYBmaiAfYNc-HLycUlmMQU5pHvLEoaY5486ZEN5DtqlqBx70Vfd9KDeRweS19_ZPx2VR_XkasOLgcAPNSDGmekeF3WPsdNGehGJWLzm0QQ4S8Z2uv46otRqWMBvCIPSfJ3VEVE-zd_5Lqs3IbddxiZ5tkoSlpr-Cp7w8HaG" />
+                <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Trust Bar -->
+    <section class="bg-white py-12 border-y border-surface-variant/30">
+        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-2">verified_user</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Odontología Integral</span>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-2">biotech</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Tecnología de Vanguardia</span>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-2">schedule</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Citas en 24 Horas</span>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <span class="material-symbols-outlined text-secondary text-4xl mb-2">location_on</span>
+                <span class="font-label-caps text-label-caps text-on-surface-variant">Los Mochis, Sinaloa</span>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section -->
+    <section class="py-section-gap-lg bg-surface" id="tratamientos">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-headline-md text-headline-md text-primary mb-4">Tratamientos que transforman tu sonrisa
+                </h2>
+                <div class="w-20 h-1 bg-secondary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+                <!-- Service Cards -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">cleaning_services</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Limpieza Dental</h3>
+                    <p class="text-on-surface-variant mb-6">Prevención y salud periodontal con tecnología ultrasónica.
+                    </p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">dentistry</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Implantes</h3>
+                    <p class="text-on-surface-variant mb-6">Soluciones permanentes para recuperar la funcionalidad y
+                        estética dental.</p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">grid_view</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Ortodoncia (Brackets)</h3>
+                    <p class="text-on-surface-variant mb-6">Alineación perfecta con brackets estéticos e invisibles.</p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <!-- Row 2 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">auto_awesome</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Blanqueamiento</h3>
+                    <p class="text-on-surface-variant mb-6">Devuelve la luminosidad a tu sonrisa en una sola sesión.</p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">workspace_premium</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Diseño de Sonrisa</h3>
+                    <p class="text-on-surface-variant mb-6">Restauración estética personalizada para lograr proporciones
+                        perfectas.</p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">health_metrics</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Endodoncia</h3>
+                    <p class="text-on-surface-variant mb-6">Tratamientos indoloros para salvar piezas dentales
+                        comprometidas.</p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <!-- Row 3 -->
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">oral_disease</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Resinas</h3>
+                    <p class="text-on-surface-variant mb-6">Láminas ultrafinas de porcelana para una sonrisa impecable.
+                    </p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">chess_queen</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Coronas y Puentes</h3>
+                    <p class="text-on-surface-variant mb-6">Cuidado dental especializado y cariñoso para los más
+                        pequeños.</p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+                <div
+                    class="bg-white p-8 rounded-xl shadow-sm border border-border-subtle hover:border-secondary transition-all group reveal">
+                    <span class="material-symbols-outlined text-secondary text-5xl mb-6">medical_services</span>
+                    <h3 class="font-headline-sm text-headline-sm mb-3">Cirugía Oral</h3>
+                    <p class="text-on-surface-variant mb-6">Procedimientos quirúrgicos seguros y mínimamente invasivos.
+                    </p>
+                    <a class="text-secondary font-button-text hover:gap-2 flex items-center gap-1 transition-all"
+                        href="https://wa.me/526681873390" target="_blank">Conocer más <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet the Doctor -->
+    <section class="py-section-gap-lg bg-surface-ice" id="doctor">
+        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+            <div class="relative reveal order-2 md:order-1">
+                <div class="absolute -top-6 -left-6 w-24 h-24 bg-secondary/10 rounded-full z-0"></div>
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl aspect-[4/5]">
+                    <img alt="Dr. Juan Atondo" class="w-full h-full object-cover"
+                        data-alt="A professional studio portrait of Dr. Juan Atondo, a male dentist in a clean navy medical uniform, smiling warmly at the camera. He is standing in a brightly lit, modern medical setting with clinical excellence vibes. The lighting is soft and flattering, emphasizing trustworthiness and expertise. The aesthetic is clean and premium with Los Mochis business branding elements."
+                        src="./assets/img/003.png" />
+                </div>
+            </div>
+            <div class="reveal order-1 md:order-2">
+                <span
+                    class="bg-tertiary-fixed text-on-tertiary-fixed px-3 py-1 rounded font-label-caps text-label-caps mb-6 inline-block">ESPECIALISTA
+                    CERTIFICADO</span>
+                <h2 class="font-display-lg text-display-lg text-primary mb-6">Dr. Juan Atondo</h2>
+                <p class="text-body-lg text-on-surface mb-6">
+                    Con más de 10 años de experiencia transformando sonrisas en Los Mochis, el Dr. Atondo se destaca por
+                    su precisión técnica y su compromiso con la salud integral de sus pacientes.
+                </p>
+                <div class="space-y-4 mb-10">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-success-clinical">check_circle</span>
+                        <span class="text-body-md">Especialista en Prótesis Bucal e Implantología.</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-success-clinical">check_circle</span>
+                        <span class="text-body-md">Cédula Profesional: 12345678</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-success-clinical">check_circle</span>
+                        <span class="text-body-md">Miembro de la Asociación Dental Mexicana.</span>
+                    </div>
+                </div>
+                <button
+                    class="bg-primary text-on-primary px-8 py-4 font-button-text text-button-text rounded-lg hover:bg-secondary transition-all"
+                    onclick="openModal()">Agendar con el Dr. Atondo</button>
+            </div>
+        </div>
+    </section>
+    <!-- Results Gallery (Before/After) -->
+    <section class="py-section-gap-lg bg-white" id="resultados">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-headline-md text-headline-md text-primary mb-4">Casos de Éxito</h2>
+                <p class="text-on-surface-variant">Desliza para ver la transformación real de nuestros pacientes.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Case 1 -->
+                <div class="reveal">
+                    <div class="before-after-slider rounded-xl shadow-lg">
+                        <img alt="Antes" class="slider-image"
+                            data-alt="Close-up macro photography of a patient's mouth before dental treatment, showing misaligned and slightly yellowed teeth in a clinical setting with neutral lighting."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCV0xcN1Q3-l_cULiUGHtKcdZBkexKBxUDSFbQPQLmrVu6GFp2ZyTyjgl9HNHiwCVa5tOHY_ktnjrMwc3973JTmoNnbhV_zBrJy_jqNiw8B6cQd-shoC_Npfsp2jFzgTsoe97p4fXKRWWzxNGcKLMC9kYgYQcsfDAUmcGq-omHEjvOp0DjydL8ixdCRY5szOmDeZASvEPRLDxPZbWgzFH4ZoCaaUU1dH4FYy8itFZUALXgEsnhrEPT-x4n4XnfCw68kngZSmeNnnABs" />
+                        <img alt="Después" class="slider-image after-image"
+                            data-alt="Close-up macro photography of the same patient's mouth after high-end cosmetic veneer treatment, showing perfectly aligned, bright white, and healthy-looking teeth in a professional dental light setting."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7BTcraXrRVIMmRE0dSi7i6gyGVmwxH2Efj2S9pKiWfeWzLZknCiRsE9EF3tMmZOaPjqMJJGmVF2NPFtCWXHpK5j0UOtIK11xI1u4IOvlsu2g35-A6wCXtFP52VDHwF4ZORqDRXjEH2HDuCKyAiBm_5WYR5b7oLm6X1BeJ-cJCEvU7XJZjOlitB6U7iSzYhx10OUDYV_NyP6QjHBPHCug5Ze-nHaSD8fx1v6U2iSZScuNfY4IutoHBllD2uTK0jt9TFCsqkrloOHcv" />
+                        <input class="slider-input" max="100" min="0" oninput="handleSlider(this)" type="range"
+                            value="50" />
+                        <div class="slider-handle"></div>
+                        <div class="absolute bottom-4 left-4 bg-white/80 px-2 py-1 rounded text-[10px] font-bold">ANTES
+                        </div>
+                        <div class="absolute bottom-4 right-4 bg-white/80 px-2 py-1 rounded text-[10px] font-bold">
+                            DESPUÉS</div>
+                    </div>
+                    <p class="mt-4 font-label-caps text-label-caps text-center">Diseño de Sonrisa Completo</p>
+                </div>
+                <!-- Case 2 -->
+                <div class="reveal">
+                    <div class="before-after-slider rounded-xl shadow-lg">
+                        <img alt="Antes" class="slider-image"
+                            data-alt="Macro dental photography of an initial state of teeth needing orthodontic work, showing slight crowding and gaps in a professional dental environment."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWjYLztZ1DDXfBAt2qhbKp4y5XFsa4rUAr6AIOe4Ymae15sNBkHiu6Ln3VgxpDEUy77Ak55hlb3xoeNsro001wGJhbq31KaEbg00Gc2ppzrNKx_0MelAQlAuyJd9t7LdJPyhaU9HMCKGYe45MKvDfdiWdTEzRwk521-_mhWN086WH8O0hp4dTvDacb_oIDFX1yswlqlBvkWxigvPFvYpaqIHheqMM9Oxb1R_FupE8v1zP6rfPUzwMRO4N7VdfYq6ughvUqQj7XMsOi" />
+                        <img alt="Después" class="slider-image after-image"
+                            data-alt="Macro dental photography after 18 months of orthodontic treatment, showing a perfectly aligned smile with healthy gums and clear aesthetic improvement."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyjzs1g5pTL2hxw09-j1z0s1Ba8kg7zpQpc1tzurKUh3-12D6u-1NNkdt4UobFpTnZU8-O_XvdTtWnhs9h5Im12QzeoQlmcccbLOiQyKxKAmngIJXIw9kKJx4e-53hDSAFsaHF7ZkuIkwtd1SR02Q7kzjd9POTjn0gSbYyAwTXMKJOE9Tl0T9F9VYPdU7U3fSnuhgnuZV_ON0noe-ayPsyBVUnQs2obOnN_rlTe4OyKDyOW1lzLhvJA_Sj1Se-qYUeXxhP7q-eaIlG" />
+                        <input class="slider-input" max="100" min="0" oninput="handleSlider(this)" type="range"
+                            value="50" />
+                        <div class="slider-handle"></div>
+                    </div>
+                    <p class="mt-4 font-label-caps text-label-caps text-center">Ortodoncia Invisible</p>
+                </div>
+                <!-- Case 3 -->
+                <div class="reveal">
+                    <div class="before-after-slider rounded-xl shadow-lg">
+                        <img alt="Antes" class="slider-image"
+                            data-alt="Close up of a dental patient needing whitening treatment, teeth showing heavy coffee stains and aged yellow tint in a clean clinical lighting."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcvt2M_aui8OehR5mWWBr410N7uX5TV51CAi3gdsEfU51RzjkiGZBchaeb554n3rMyvozSBbx_SYCqnHk0xJHV1LEQndrtBp93Z29gsfg6IqBeim19Ow3WDX3kaeT01yHQkU2ZAk24p5BltOUi4s_Mt1O8TizsexzelPQNIdZYcGMxYvrjqt0PHcxyjY_ID9yo5q9VqJd4HTjeg-UJH8lhApngrVypM3DDUusE2R_O76foAFmvA4exQ2c0ZRCsbB_70t9Ud_I7a2_S" />
+                        <img alt="Después" class="slider-image after-image"
+                            data-alt="Close up of the same dental patient after professional LED whitening treatment, showing bright white teeth with natural translucency in high-key lighting."
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf_9eVOobHGHlEDxLtJdaqepqmDFsJKEMYlNmweog-3b298EgrocRyto_4OQwUo9AvNlPXpSp7QIo6DFgl4HDe7JRWxrFYCSsAjYDKJk_tlEsc1-YL2ObsGFckoqg4uPPL8lhyrrhXqCt9DDjQnoSE9vPaVC19rRLSu2-IsCK4IXUUWDne77xp0ZJkT1YR49ReIm4uZndlmyPMXDZPy1DplPHgQyt1UdHn9cz4mSNnD1mrrpbo8kcEleJJfrceTdFAD_4D9HFjOQ4m" />
+                        <input class="slider-input" max="100" min="0" oninput="handleSlider(this)" type="range"
+                            value="50" />
+                        <div class="slider-handle"></div>
+                    </div>
+                    <p class="mt-4 font-label-caps text-label-caps text-center">Blanqueamiento Clínico</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section class="py-section-gap-lg bg-surface-ice overflow-hidden">
+        <div class="max-w-container-max mx-auto px-gutter">
+            <h2 class="font-headline-md text-headline-md text-primary text-center mb-16 reveal">Lo que dicen nuestros
+                pacientes</h2>
+            <div class="flex transition-transform duration-500 ease-in-out gap-gutter">
+                <div class="min-w-full md:min-w-[400px] bg-white p-10 rounded-2xl shadow-sm reveal">
+                    <div class="flex text-tertiary-fixed-dim mb-4">
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                    </div>
+                    <p class="text-body-md mb-8 italic">"La atención del Dr. Atondo es impecable. Me hice un diseño de
+                        sonrisa y el resultado superó mis expectativas. ¡Muy recomendado en Los Mochis!"</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center font-bold text-secondary">
+                            MG</div>
+                        <div>
+                            <p class="font-bold text-primary">Maria G.</p>
+                            <p class="text-xs text-on-surface-variant">Paciente de Diseño de Sonrisa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-full md:min-w-[400px] bg-white p-10 rounded-2xl shadow-sm reveal">
+                    <div class="flex text-tertiary-fixed-dim mb-4">
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                    </div>
+                    <p class="text-body-md mb-8 italic">"Excelente trato y tecnología. Me sentí muy cómodo durante mi
+                        cirugía de implantes. Un proceso sin dolor y muy profesional."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center font-bold text-secondary">
+                            RM</div>
+                        <div>
+                            <p class="font-bold text-primary">Roberto M.</p>
+                            <p class="text-xs text-on-surface-variant">Paciente de Implantes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-full md:min-w-[400px] bg-white p-10 rounded-2xl shadow-sm reveal">
+                    <div class="flex text-tertiary-fixed-dim mb-4">
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                        <span class="material-symbols-outlined fill">star</span>
+                    </div>
+                    <p class="text-body-md mb-8 italic">"Llevé a mis hijos para su limpieza y el Dr. tiene una paciencia
+                        increíble. El lugar está impecable. La mejor clínica dental de la ciudad."</p>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-full bg-secondary/20 flex items-center justify-center font-bold text-secondary">
+                            CR</div>
+                        <div>
+                            <p class="font-bold text-primary">Claudia R.</p>
+                            <p class="text-xs text-on-surface-variant">Paciente Familiar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="py-section-gap-lg bg-surface" id="faq">
+        <div class="max-w-2xl mx-auto px-gutter">
+            <h2 class="font-headline-md text-headline-md text-primary text-center mb-12 reveal">Preguntas Frecuentes
+            </h2>
+            <div class="space-y-4">
+                <!-- FAQ Item -->
+                <div class="reveal border-b border-surface-variant">
+                    <button class="flex justify-between items-center w-full py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm text-primary">¿Dónde se encuentran
+                            ubicados?</span>
+                        <span class="material-symbols-outlined transition-transform">expand_more</span>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pb-6 text-on-surface-variant">Estamos ubicados en el corazón de Los Mochis, Sinaloa,
+                            sobre la Av. Independencia. Contamos con estacionamiento para pacientes.</p>
+                    </div>
+                </div>
+                <div class="reveal border-b border-surface-variant">
+                    <button class="flex justify-between items-center w-full py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm text-primary">¿Qué métodos de pago
+                            aceptan?</span>
+                        <span class="material-symbols-outlined transition-transform">expand_more</span>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pb-6 text-on-surface-variant">Aceptamos efectivo, tarjetas de crédito/débito y
+                            transferencias bancarias. También contamos con planes de financiamiento en tratamientos
+                            seleccionados.</p>
+                    </div>
+                </div>
+                <div class="reveal border-b border-surface-variant">
+                    <button class="flex justify-between items-center w-full py-6 text-left" onclick="toggleFaq(this)">
+                        <span class="font-headline-sm text-headline-sm text-primary">¿Atienden urgencias?</span>
+                        <span class="material-symbols-outlined transition-transform">expand_more</span>
+                    </button>
+                    <div class="max-h-0 overflow-hidden transition-all duration-300">
+                        <p class="pb-6 text-on-surface-variant">Sí, entendemos que los problemas dentales no esperan.
+                            Por favor contáctanos vía WhatsApp para atención prioritaria.</p>
+                    </div>
+                </div>
+                <!-- ... additional questions simulated ... -->
+            </div>
+        </div>
+    </section>
+    <!-- Secondary CTA -->
+    <section class="py-24 bg-primary text-on-primary">
+        <div class="max-w-container-max mx-auto px-gutter text-center">
+            <h2 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-8">¿Listo para transformar tu
+                sonrisa?</h2>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+                <button
+                    class="bg-secondary text-on-primary px-10 py-5 font-button-text text-button-text rounded-lg hover:bg-accent-hover transition-all"
+                    onclick="openModal()">Programar Consulta</button>
+                <a class="border-2 border-on-primary text-on-primary px-10 py-5 font-button-text text-button-text rounded-lg hover:bg-on-primary hover:text-primary transition-all flex items-center justify-center gap-2"
+                    href="https://wa.me/526681873390">
+                    <span class="material-symbols-outlined">chat</span> WhatsApp Directo
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="py-section-gap-lg bg-surface" id="contacto">
+        <div class="max-w-container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-2 gap-16">
+            <div class="reveal">
+                <h2 class="font-headline-md text-headline-md text-primary mb-8">Información de Contacto</h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <span class="material-symbols-outlined text-secondary text-3xl">location_on</span>
+                        <div>
+                            <h4 class="font-bold text-primary mb-1">Dirección</h4>
+                            <p class="text-on-surface-variant">Av. Independencia #1234, Col. Centro<br />Los Mochis,
+                                Sinaloa. CP 81200</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="material-symbols-outlined text-secondary text-3xl">call</span>
+                        <div>
+                            <h4 class="font-bold text-primary mb-1">Teléfono</h4>
+                            <p class="text-on-surface-variant">(52) 66 8187 3390</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <span class="material-symbols-outlined text-secondary text-3xl">schedule</span>
+                        <div>
+                            <h4 class="font-bold text-primary mb-1">Horarios</h4>
+                            <p class="text-on-surface-variant">Lun - Vie: 9:00 AM - 5:00 PM<br />Sábados: 9:00 AM - 2:00
+                                PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="reveal h-[400px] bg-surface-variant rounded-2xl overflow-hidden grayscale">
+                <!-- Map Simulation -->
+                <div class="w-full h-full relative" data-location="Los Mochis, Sinaloa" style="">
+                    <img alt="Ubicación Mapa" class="w-full h-full object-cover"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtbezC2AFbbcxbokUEdBdk6Gy80LVCB0EOVMBFr-dZXp_Yj__hn-bLw8nUx5aU09VmQldmZKNyYxzocwzzEk2T1Rec-jzYcWPiowpDYNZpfjHi0oqNXNkkgBWTVT0KfnO_0hzIWUmMgw-0c9iu_u6Igd2hIESQ47pK7mO-qoeWcsPe8g6e4pEPt4g4aPDOA8GIyMrbWFqlMeWhFivSB6FWXNzDp_NCjSO4QGNgZWp_boDvKyFKTDfLmmNGt0xh9KzEmaYSMt1qTDUE" />
+                    <div class="absolute inset-0 bg-primary/20 pointer-events-none"></div>
+                    <div
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-white p-2 rounded shadow-lg flex items-center gap-2">
+                        <span class="material-symbols-outlined text-error">location_on</span>
+                        <span class="font-bold text-xs">SMILE ROOM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-primary dark:bg-on-primary-fixed w-full pt-section-gap-sm pb-8 text-on-primary">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-gutter max-w-container-max mx-auto">
+            <div class="space-y-4">
+                <span class="text-headline-sm font-headline-sm text-on-primary block">SMILE ROOM</span>
+                <p class="text-on-primary/70 text-body-md">Transformando la odontología en una experiencia de bienestar
+                    y lujo.</p>
+            </div>
+            <div>
+                <h4 class="text-label-caps font-label-caps mb-6">Tratamientos</h4>
+                <ul class="space-y-3">
+                    <li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-body-md"
+                            href="#">Diseño de Sonrisa</a></li>
+                    <li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-body-md"
+                            href="#">Implantes</a></li>
+                    <li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-body-md"
+                            href="#">Ortodoncia</a></li>
+                    <li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-body-md"
+                            href="#">Blanqueamiento</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-label-caps font-label-caps mb-6">Navegación</h4>
+                <ul class="space-y-3">
+                    <li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-body-md"
+                            href="#">Doctor</a></li>
+                    <li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-body-md"
+                            href="#">Resultados</a></li>
+                    <li><a class="text-on-primary/70 hover:text-on-primary transition-colors text-body-md"
+                            href="#">Preguntas Frecuentes</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-label-caps font-label-caps mb-6">Siguenos</h4>
+                <div class="flex gap-4">
+                    <a class="w-10 h-10 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-secondary transition-all"
+                        href="https://www.instagram.com/smileroomx/" target="_blank">
+                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12c0-3.403 2.759-6.162 6.162-6.162s6.162 2.759 6.162 6.162c0 3.403-2.759 6.162-6.162 6.162s-6.162-2.759-6.162-6.162zm2.889 0c0 1.821 1.454 3.297 3.297 3.297 1.821 0 3.297-1.476 3.297-3.297 0-1.821-1.476-3.297-3.297-3.297-1.843 0-3.297 1.476-3.297 3.297zm11.083-6.469c0 .795.645 1.44 1.44 1.44s1.44-.645 1.44-1.44-.645-1.44-1.44-1.44-1.44.645-1.44 1.44z"/>
+                        </svg>
+                    </a>
+                    <a class="w-10 h-10 rounded-full border border-on-primary/30 flex items-center justify-center hover:bg-secondary transition-all"
+                        href="https://www.facebook.com/smileroom" target="_blank">
+                        <svg fill="currentColor" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-container-max mx-auto px-gutter mt-16 pt-8 border-t border-on-primary/10 text-center text-on-primary/50 text-label-caps">
+            © 2024 SMILE ROOM - Dr. Juan Atondo. Todos los derechos reservados.
+        </div>
+    </footer>
+    <!-- Floating Buttons -->
+    <a class="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center hover:scale-110 transition-transform animate-pulse"
+        href="https://wa.me/526681873390">
+        <svg fill="currentColor" height="32" viewBox="0 0 24 24" width="32" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.556 5.332-11.891 11.891-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.414 0 6.556-5.332 11.891-11.891 11.891-2.01 0-3.987-.512-5.735-1.483l-6.258 1.69zm6.103-3.626c1.554.921 3.197 1.408 4.887 1.408 5.257 0 9.531-4.275 9.531-9.531 0-2.546-.992-4.939-2.792-6.74-1.801-1.801-4.194-2.792-6.74-2.792-5.257 0-9.531 4.275-9.531 9.531 0 1.776.49 3.508 1.417 5.011l-.955 3.489 3.583-.976zm10.51-6.195c-.279-.139-1.647-.814-1.902-.906-.255-.093-.441-.139-.627.139-.186.279-.72.906-.883 1.092-.163.186-.325.209-.604.069-.279-.139-1.18-.435-2.247-1.387-.83-.741-1.39-1.655-1.552-1.934-.163-.279-.017-.43.122-.569.124-.125.279-.325.418-.487.139-.163.186-.279.279-.465.093-.186.046-.348-.023-.487-.069-.139-.627-1.511-.859-2.07-.226-.544-.454-.47-.627-.478-.162-.008-.348-.01-.534-.01-.186 0-.488.07-.743.348-.256.279-.976.953-.976 2.324 0 1.371 1.001 2.697 1.14 2.883.139.186 1.97 3.008 4.773 4.218.667.288 1.188.46 1.594.589.67.213 1.28.183 1.762.11.538-.081 1.647-.674 1.881-1.324.233-.65.233-1.209.163-1.324-.07-.116-.255-.186-.534-.325z">
+            </path>
+        </svg>
+    </a>
+    <button
+        class="fixed bottom-6 left-6 z-50 bg-white/80 backdrop-blur-md border border-border-subtle w-12 h-12 rounded-full flex items-center justify-center text-primary shadow-lg hover:bg-white transition-all"
+        onclick="window.scrollTo(0,0)">
+        <span class="material-symbols-outlined">arrow_upward</span>
+    </button>
+    <!-- Modal Cita -->
+    <div class="fixed inset-0 z-[100] hidden" id="modal-cita">
+        <div class="absolute inset-0 bg-primary/40 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-white rounded-2xl shadow-2xl p-8">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="font-headline-sm text-headline-sm text-primary">Agendar mi Cita</h3>
+                <button class="material-symbols-outlined text-outline" onclick="closeModal()">close</button>
+            </div>
+            <form class="space-y-4" id="appointmentForm">
+                <div>
+                    <label class="block font-label-caps text-[10px] text-primary mb-1">NOMBRE COMPLETO</label>
+                    <input
+                        class="w-full border-border-subtle rounded px-4 py-3 focus:border-secondary focus:ring-secondary transition-all"
+                        id="name" required="" type="text" />
+                </div>
+                <div>
+                    <label class="block font-label-caps text-[10px] text-primary mb-1">TELÉFONO</label>
+                    <input
+                        class="w-full border-border-subtle rounded px-4 py-3 focus:border-secondary focus:ring-secondary transition-all"
+                        id="phone" required="" type="tel" pattern="[0-9]+" inputmode="numeric" />
+                </div>
+                <div>
+                    <label class="block font-label-caps text-[10px] text-primary mb-1">TRATAMIENTO</label>
+                    <select
+                        class="w-full border-border-subtle rounded px-4 py-3 focus:border-secondary focus:ring-secondary transition-all"
+                        id="service">
+                        <option>Diseño de Sonrisa</option>
+                        <option>Implantes</option>
+                        <option>Ortodoncia</option>
+                        <option>Limpieza / General</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-label-caps text-[10px] text-primary mb-1">FECHA PREFERIDA</label>
+                    <input
+                        class="w-full border-border-subtle rounded px-4 py-3 focus:border-secondary focus:ring-secondary transition-all"
+                        id="date" type="date" />
+                </div>
+                <div>
+                    <label class="block font-label-caps text-[10px] text-primary mb-1">HORA PREFERIDA</label>
+                    <select
+                        class="w-full border-border-subtle rounded px-4 py-3 focus:border-secondary focus:ring-secondary transition-all"
+                        id="time">
+                        <option value="">Selecciona una hora</option>
+                        <option value="09:00">09:00</option>
+                        <option value="09:30">09:30</option>
+                        <option value="10:00">10:00</option>
+                        <option value="10:30">10:30</option>
+                        <option value="11:00">11:00</option>
+                        <option value="11:30">11:30</option>
+                        <option value="12:00">12:00</option>
+                        <option value="12:30">12:30</option>
+                        <option value="14:30">14:30</option>
+                        <option value="15:00">15:00</option>
+                        <option value="15:30">15:30</option>
+                        <option value="16:00">16:00</option>
+                        <option value="16:30">16:30</option>
+                        <option value="17:00">17:00</option>
+                    </select>
+                </div>
+                <button
+                    class="w-full bg-primary text-on-primary py-4 rounded-lg font-button-text hover:bg-secondary transition-all mt-4 opacity-50 cursor-not-allowed"
+                    onclick="sendWhatsApp()" type="button" disabled>Solicitar Cita</button>
+            </form>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

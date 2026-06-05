@@ -1,0 +1,190 @@
+/* =============================================================
+   SMILE ROOM — styles.css
+   Clínica Dental Dr. Juan Atondo · Los Mochis, Sinaloa
+
+   Scope: Custom rules that Tailwind utilities cannot express:
+     1. Material Symbols icon rendering
+     2. Scroll-reveal animation states
+     3. Before/after comparison slider
+     4. Navbar glass transition (js-driven class hooks)
+     5. Typewriter cursor blink
+     6. Modal open/close transition helpers
+     7. WhatsApp button pulse
+   ============================================================= */
+
+/* ── 1. Material Symbols ───────────────────────────────────── */
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Filled variant used on star ratings */
+.material-symbols-outlined.fill {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ── 2. Scroll Reveal ──────────────────────────────────────── */
+/*
+  Initial state — set on all .reveal elements at parse time.
+  JS adds .active via IntersectionObserver when the element
+  enters the viewport.
+*/
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── 3. Before / After Comparison Slider ──────────────────── */
+/*
+  Technique: two absolutely-positioned images stacked in a
+  relative container. The "after" image is clipped via
+  clip-path; the clip boundary is controlled by a transparent
+  <input type="range"> that sits on top and reports its value
+  to handleSlider() in main.js.
+*/
+.before-after-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 0.75rem; /* matches Tailwind rounded-xl */
+  box-shadow: 0 10px 30px rgba(4, 22, 39, 0.15);
+  user-select: none; /* prevent accidental text selection while dragging */
+}
+
+.slider-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* "after" starts half-revealed */
+.after-image {
+  clip-path: inset(0 0 0 50%);
+}
+
+/* Invisible but interactive range input covers the whole card */
+.slider-input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: ew-resize;
+  z-index: 10;
+}
+
+/* Remove default thumb styling; the handle div acts as the thumb */
+.slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0;
+  height: 0;
+}
+.slider-input::-moz-range-thumb {
+  width: 0;
+  height: 0;
+  border: none;
+}
+
+/* Vertical divider line */
+.slider-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%; /* synced with input value via JS */
+  width: 2px;
+  background: #ffffff;
+  pointer-events: none;
+  z-index: 5;
+  transition: left 0.05s linear; /* subtle smoothing while dragging */
+}
+
+/* Circular drag icon centred on the handle */
+.slider-handle::after {
+  content: "↔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #041627; /* --color-primary */
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* ── 4. Navbar glass on scroll ─────────────────────────────── */
+/*
+  JS adds .scrolled to <nav> after window.scrollY > 10.
+  Without .scrolled the navbar is semi-transparent (Tailwind bg-surface/80).
+  With .scrolled it becomes an opaque white card with a shadow.
+*/
+nav.scrolled {
+  background-color: #ffffff !important;
+  box-shadow: 0 1px 12px rgba(4, 22, 39, 0.08);
+}
+
+/* ── 5. Typewriter cursor blink ────────────────────────────── */
+#typewriter::after {
+  content: "|";
+  margin-left: 2px;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ── 6. Modal transition ───────────────────────────────────── */
+/*
+  The modal wrapper starts hidden (Tailwind `hidden` = display:none).
+  JS removes `hidden` and adds `.modal-open` to trigger the fade-in.
+  Closing reverses the process.
+*/
+#modal-cita {
+  /* inherits Tailwind `fixed inset-0 z-[100] hidden` */
+}
+
+#modal-cita .modal-panel {
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+#modal-cita.modal-open .modal-panel {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* ── 7. WhatsApp button pulse ──────────────────────────────── */
+/*
+  Tailwind `animate-pulse` uses opacity; we override with a
+  box-shadow pulse so the button stays fully visible.
+*/
+.whatsapp-float {
+  animation: waPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes waPulse {
+  0%   { box-shadow: 0 0 0  0    rgba(37, 211, 102, 0.50); }
+  60%  { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);     }
+  100% { box-shadow: 0 0 0  0    rgba(37, 211, 102, 0);     }
+}
